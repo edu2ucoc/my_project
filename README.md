@@ -21,3 +21,13 @@ source dev/bin/activate
 # 패키지 설치
 (dev) > pip3 install -r requirements.txt
 ```
+
+# 코드 작성
+- main.py
+
+# 서버 가동
+```
+# uvicorn 모듈명(엔트리포인트):<FastAPI명> 옵션
+# --reload : 코드 수정 => 저장 => 감지 => 재가동 : 수정된 내용을 자동 반영하는 옵션
+uvicorn main:app --reload
+```
