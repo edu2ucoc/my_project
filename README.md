@@ -14,3 +14,41 @@ CI/CD를 위한 프로젝트. 간단한 대시보드 구성
         - Dockerfile, Docker-compose
 
 # 구조
+```
+# 맥 brew install tree
+# 맥 find . -print
+tree /F /A >> struct.txt
+```
+```
+/
+|   .gitignore
+|   docker-compose.yml
+|   README.md
+|   struct.txt
+|   
++---.github
+|   \---workflows
+|           deploy.yml
+|           
++---app
+|   |   Dockerfile
+|   |   main.py
+|   |   requirements.txt
+|   |   
+|   +---static
+|   |   +---assets
+|   |   |   \---img
+|   |   |       *.png|*.jpg
+|   |   +---css
+|   |   |       *.css
+|   |   \---js
+|   |           *.js
+|   |           
+|   \---templates
+|           index.html
+|           login.html
+|           
++---nginx
+|       Dockerfile
+|       web.conf
+```
